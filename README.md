@@ -104,3 +104,14 @@ cf delete cf-nodejs
 
 -- CF Commands - http://cli.cloudfoundry.org/en-US/cf/
 -- https://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+
+## Access to PaaS Platform
+
+The following table lists the name of providers and their API endpoints to login:
+
+- Pivotal Web Services uses https://api.run.pivotal.io
+- IBM BlueMix uses https://api.ng.bluemix.net
+- SAP Cloud Platform uses https://api.cf.eu10.hana.ondemand.com - https://api.cf.us10.hana.ondemand.com
+- Swisscom uses https://api.lyra-836.appcloud.swisscom.com
+
+
