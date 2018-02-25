@@ -8,6 +8,9 @@ app.set( 'view engine', 'jade')
 app.use( express.static( __dirname + '/public'))
 
 app.get( '/', function ( req, res) {
+
+  console.log('GET Request RCV');
+
   res.render( 'pages/index', {
     app_environment:    app.settings.env,
     application_name:   cf_app.get_app_name(),
@@ -22,4 +25,7 @@ app.get( '/', function ( req, res) {
   })
 })
 
-app.listen( process.env.PORT || 4000)
+var port = process.env.PORT || 4000
+
+console.log(`Server is listening on port ${port}`);
+app.listen( port )
