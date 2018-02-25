@@ -84,6 +84,11 @@ cf stop cf-nodejs
 
 cf logs cf-nodejs
 
+## Here is a sample log
+   2018-02-25T14:19:42.38+1100 [RTR/8] OUT cf-nodejs-agile-oryx.cfapps.io - [2018-02-25T03:19:42.380+0000] "GET / HTTP/1.1" 200 0 5570 "-" "HTTPie/0.9.9" "10.10.66.20:62853" "10.10.148.164:61008" x_forwarded_for:"49.2.62.195, 10.10.66.20" x_forwarded_proto:"http" vcap_request_id:"f7253a59-e5ee-4996-4254-d1c9eb5f50a7" response_time:0.005217516 app_id:"8bc63051-adda-4d38-81ad-8ff2b85cb4f9" app_index:"1" x_b3_traceid:"0a75b53379081707" x_b3_spanid:"0a75b53379081707" x_b3_parentspanid:"-"
+   2018-02-25T14:19:42.38+1100 [RTR/8] OUT
+   2018-02-25T14:19:42.38+1100 [APP/PROC/WEB/1] OUT GET Request RCV
+
 ```
 
 ### Finally delete your application
@@ -97,4 +102,5 @@ cf delete cf-nodejs
 
 ## References
 
+-- CF Commands - http://cli.cloudfoundry.org/en-US/cf/
 -- https://docs.cloudfoundry.org/buildpacks/node/node-tips.html
